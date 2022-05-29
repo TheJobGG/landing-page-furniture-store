@@ -4,8 +4,11 @@
     --color-black-secondary: #2b2c28;
     --color-primary: #7de2d1;
     --color-primary-shadow: #339989;
+    --color-primary-shadow85: #33998985;
+    --color-primary-shadow90: #33998990;
     --border-radius: 0px;
     --padding-header--heigth-elements: 2rem;
+    --transition-time: 250ms;
 }
 
 * {
@@ -15,23 +18,55 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-color: var(--color-white);
+}
+
 html {
     font-size: 16px;
 }
 
-.button-primary, .button-secondary{
+.button-primary,
+.button-secondary {
     text-decoration: none;
 }
-.button-primary{
+
+/* Estilado botón primario */
+.button-primary {
     color: var(--color-white);
     background-color: var(--color-primary-shadow);
     padding: 15px 40px;
     border-radius: 20px;
+    transition: box-shadow var(--transition-time) ease-out;
 }
-.button-secondary{
+
+
+.button-primary:hover {
+    box-shadow: 3px 2px 22px 1px var(--color-primary-shadow90);
+}
+
+.button-primary:active, .button-secondary:active {
+    animation: click 250ms ease-out;
+}
+
+@keyframes click {
+    from {
+        scale: 1;
+    }
+    to{
+        scale: 0.95;
+    }
+}
+
+/* Estilado botón secundario */
+.button-secondary {
     color: var(--color-primary-shadow);
     background-color: transparent;
     padding: 15px 40px;
     border-radius: 20px;
     border: 2px solid var(--color-primary-shadow);
+}
+
+.button-secondary:hover {
+    box-shadow: 3px 2px 22px 1px var(--color-primary-shadow85);
 }

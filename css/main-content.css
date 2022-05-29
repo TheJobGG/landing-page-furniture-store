@@ -27,6 +27,10 @@
     font-size: 3rem;
 }
 
+.main-content-info > p{
+    margin-top: 1rem;
+}
+
 .main-content-buttons{
     margin-top: 80px;
     display: flex;

@@ -3,14 +3,17 @@
     source: https://www.javascripttutorial.net/javascript-dom/javascript-scroll-events/
 */
 
+//Set del color de fondo del header
 const header = document.querySelector("#header");
 header.style.backgroundColor = "#7de2d1";
 
-let scrolling = false;
 
+const mainContentBgColor = document.querySelector(".main-content-bg-color");
+const heightBanner = mainContentBgColor.clientHeight
+
+//Si el header esta en el principio, sera azul, de lo contrario sera blanca
 window.onscroll = function(){
-    scrolling = true;
-    if(window.scrollY != 0 && scrolling){
+    if(window.scrollY  > heightBanner){
         header.classList.remove('bg-color');
         header.classList.add('bg-white');
     }else{
