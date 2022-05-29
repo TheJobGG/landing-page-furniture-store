@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-radius: 0 0 var(--border-radius-header) var(--border-radius-header);
     z-index: 100;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    border-bottom-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius-header);
 }
 #header > a > span{
     text-align: center;
@@ -55,7 +55,7 @@
 }
 
 #header>ul>li:last-child>a {
-    border-bottom-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius-header);
 }
 
 #header>ul>li:hover>a {
