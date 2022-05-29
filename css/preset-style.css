@@ -1,0 +1,37 @@
+:root {
+    --color-white: #fffafb;
+    --color-black: #131515;
+    --color-black-secondary: #2b2c28;
+    --color-primary: #7de2d1;
+    --color-primary-shadow: #339989;
+    --border-radius: 0px;
+    --padding-header--heigth-elements: 2rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.button-primary, .button-secondary{
+    text-decoration: none;
+}
+.button-primary{
+    color: var(--color-white);
+    background-color: var(--color-primary-shadow);
+    padding: 15px 40px;
+    border-radius: 20px;
+}
+.button-secondary{
+    color: var(--color-primary-shadow);
+    background-color: transparent;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: 2px solid var(--color-primary-shadow);
+}
