@@ -30,8 +30,8 @@ Function ImgModal(param1, param2):
     3. Tiempo que tardará el modal en abrirse
     4. Tiempo que tardará el modal en cerrarse
  */
-let imgModal = (src, alt, timeOpenModal ,timeCloseModal) => {
-
+let imgModal = (src, alt, timeOpenModal, timeCloseModal) => {
+    disableScroll()
     // Obtenemos el valor puesto de la animación de "Apertura del modal"
     getComputedStyle(document.documentElement).getPropertyValue("--time-open-modal")
     // Y establecemos el valor puesto de la animación de "Apertura del modal"
@@ -65,8 +65,29 @@ let imgModal = (src, alt, timeOpenModal ,timeCloseModal) => {
     // Agregamos el evento para cerrar el modal y poder seguir navegando.
     modal.onclick = () => {
         modal.classList.add("disappear");
+        enableScroll();
         setTimeout(() => {
             modal.remove();
         }, timeCloseModal);
     };
 };
+
+
+//  Funciones para habilitar y desabilitar scroll cuando el modal est activo
+function disableScroll() {
+    // Obtenemos la posicion de la página en el eje X y Y
+    LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+    TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Detectamos cuando se haga scroll, si esto sucede estableceremos los valores 
+        // obtenidos anteriormente para mantener la vista en el mismo lugar
+        window.onscroll = function () {
+            window.scrollTo(LeftScroll, TopScroll);
+        };
+}
+
+// Al ejecutar esta función solamente estaremos limpiando la propiedad "onscroll" 
+// para que ya no establezca los valores obtenidos de "leftScroll" y "topScroll"
+function enableScroll() {
+    window.onscroll = function () { };
+}
