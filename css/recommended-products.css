@@ -1,4 +1,16 @@
-#recommended-products{
-    background-color: pink;
-    
+#recommended-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+
+#recommended-products > div:nth-child(2) {
+    text-align: right;
+    padding: 0 1rem;
+}
+#recommended-products > div:nth-child(2)> h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
