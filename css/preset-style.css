@@ -6,9 +6,11 @@
     --color-primary-shadow: #339989;
     --color-primary-shadow85: #33998985;
     --color-primary-shadow90: #33998990;
-    --border-radius: 0px;
+    --border-radius: 10px;
+    --border-radius-header: 0px;
     --padding-header--heigth-elements: 2rem;
     --transition-time: 250ms;
+    --horizontal-padding: 100px;
 }
 
 * {
@@ -20,10 +22,25 @@
 
 body {
     background-color: var(--color-white);
+    
 }
 
 html {
     font-size: 16px;
+}
+
+.icon-size{
+    width: 15px;
+    height: auto;
+}
+
+.invert-hor{
+    transform: rotateZ(180deg);
+}
+
+.subheading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .button-primary,
