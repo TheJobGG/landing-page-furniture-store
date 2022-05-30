@@ -54,3 +54,10 @@ prevSlide.addEventListener("click", function () {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
   });
 });
+
+
+
+
+/* Date from bottom of page */
+dt = new Date();
+document.querySelector(".year").innerHTML = dt.getFullYear();
