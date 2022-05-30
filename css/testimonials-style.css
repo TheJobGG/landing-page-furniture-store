@@ -71,3 +71,18 @@
     overflow: hidden;
     background-color: var(--color-black)
 }
+
+@media screen and (max-width: 600px) {
+    #testimonials{
+        padding: 0 50px;
+    }
+
+    #furniture-video > iframe{
+        width: 90vw;
+        height: 200px;
+    }
+
+    #testimonials>.list-of-testimonials{
+        flex-direction: column;
+    }
+}
