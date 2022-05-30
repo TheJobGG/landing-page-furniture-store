@@ -73,7 +73,7 @@
         cursor: pointer;
     }
 
-    #header>ul {
+    #header> .desktop-menu {
         display: none;
     }
 }

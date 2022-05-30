@@ -1,4 +1,4 @@
-:root{
+:root {
     --time-open-modal: 250ms;
     --time-close-modal: 250ms;
 }
@@ -20,12 +20,13 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
-.disappear{
+.disappear {
     animation: disappear var(--time-close-modal) ease-out;
 }
 
@@ -33,6 +34,7 @@
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -43,10 +45,28 @@
     object-fit: cover;
 }
 
-.modal-alt-text{
+.modal-alt-text {
     color: var(--color-white);
     font-size: 2.5rem;
     text-shadow: 0 0 1px var(--color-black), 0 0 1px var(--color-black);
     position: absolute;
     top: 90%;
+}
+
+.mobile-menu {
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu li {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-menu li a {
+    font-size: 1.2rem;
+    color: var(--color-white);
+    text-decoration: none;
+
 }
