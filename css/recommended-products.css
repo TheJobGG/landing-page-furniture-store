@@ -10,3 +10,19 @@
     text-align: right;
     padding: 0 1rem;
 }
+
+
+@media screen and (max-width: 600px) {
+    #recommended-products {
+        flex-direction: column;
+    }
+
+    #recommended-products > div:nth-child(1) {
+        order: 2;
+    }
+    #recommended-products > div:nth-child(2) {
+        text-align: center;
+        order: 1;
+        margin-bottom: 2rem;
+    }
+}
