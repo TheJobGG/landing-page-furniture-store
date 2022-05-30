@@ -1,0 +1,48 @@
+/* Contenedor general */
+#why-choose-us {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#why-choose-us>div:nth-child(1) {
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+/* lista de beneficios (boxes) */
+#why-choose-us>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: var(--margin-heigth-elements);
+}
+
+/* Diseño de cajas */
+.box-no-border {
+    display: flex;
+    gap: 8px;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+/* Diseño de la imagen en la caja */
+.box-no-border>img {
+    /* background-color: var(--color-primary-shadow90); */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+
+.mask-image {
+    -webkit-mask-image: -webkit-gradient(linear, center bottom, center center,
+            color-stop(0.00, rgba(0, 0, 0, 0)),
+            color-stop(1.00, rgba(0, 0, 0, 1)));
+}

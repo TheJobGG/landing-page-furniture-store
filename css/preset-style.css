@@ -9,6 +9,7 @@
     --border-radius: 10px;
     --border-radius-header: 0px;
     --padding-header--heigth-elements: 2rem;
+    --margin-heigth-elements: 2rem;
     --transition-time: 250ms;
     --horizontal-padding: 100px;
 }
@@ -27,6 +28,7 @@ body {
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 .icon-size{
@@ -87,3 +89,34 @@ html {
 .button-secondary:hover {
     box-shadow: 3px 2px 22px 1px var(--color-primary-shadow85);
 }
+
+/* No decoration for a tags */
+
+.no-decoration-text-black{
+    text-decoration: none;
+    color: var(--color-black);
+}
+.no-decoration-text-white{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+/* Opción animada */
+
+.line-hover::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 3px;
+    width: 0%;
+    transition-duration: 0.5s;
+  }
+  
+  .line-hover:hover::after{
+    width: 100%;
+  
+  }

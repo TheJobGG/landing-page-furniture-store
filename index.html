@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/slider-style.css">
     <link rel="stylesheet" href="css/modal-style.css">
     <link rel="stylesheet" href="css/recommended-products.css">
-    <link rel="shortcut icon" href="https://img.icons8.com/pastel-glyph/64/000000/armchair--v2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/why-choose-us-style.css">
+    <link rel="stylesheet" href="css/testimonials-style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="assets/icons/armchair-black-favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,18 +22,18 @@
 </head>
 
 <body>
+    <div id="home"></div>
     <!-- Header Section -->
     <header id="header">
-        <a class="no-decoration-text" href="#">
-            <img src="https://img.icons8.com/pastel-glyph/64/000000/armchair--v2.png" />
+        <a class="no-decoration-text-black" href="#home">
+            <img src="assets/icons/armchair-black.png" />
             <span>Furniture <br>Store</span>
         </a>
 
         <ul>
-            <li><a href="#" class="no-decoration-text">Furnitures</a></li>
-            <li><a href="#" class="no-decoration-text">About Us</a></li>
-            <li><a href="#" class="no-decoration-text">Contact Us</a></li>
-            <li><a href="#" class="no-decoration-text">Blog</a></li>
+            <li><a href="#recommended-products" class="no-decoration-text-black">Furnitures</a></li>
+            <li><a href="#why-choose-us" class="no-decoration-text-black">About Us</a></li>
+            <li><a href="#footer" class="no-decoration-text-black">Contact Us</a></li>
         </ul>
     </header>
 
@@ -62,30 +65,121 @@
             <div class="slide"><img src="assets/escritorio con silla.jpg" alt="Desk with chair"></div>
             <div class="slide"><img src="assets/sofa en forma de L.jpg" alt="L-shaped coffee sofa"></div>
             <div class="slide bottom-img"><img src="assets/sofa.jpg" alt="Green three seater sofa"></div>
-            <button class="btn-slider btn-prev"> ⇦ </button>
-            <button class="btn-slider btn-next"> ⇨ </button>
+            <button class="btn-slider btn-prev"> <img class="icon-size " src="assets/icons/menor_que.png"
+                    alt="icono menor que"> </button>
+            <button class="btn-slider btn-next"> <img class="icon-size invert-hor" src="assets/icons/menor_que.png"
+                    alt="mayor menor que"> </button>
         </div>
 
         <div>
-            <h2>Check out our products of the week </h2>
+            <h2 class="subheading">Check out our furnitures of the week </h2>
             <p>This selection is made by our trusted customers to guarantee its quality. </p>
         </div>
 
     </section>
 
-    <!-- About the store -->
-    <section id="about-us">
-
+    <!-- List of benefits by choose us -->
+    <section id="why-choose-us">
+        <div class="mask-image">
+            <img src="assets/man benefits.png" alt="Man">
+        </div>
+        <div>
+            <h2>Our Furniture Store has over 10 years selling the best offering the best quality to our clients</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores amet ipsum corporis assumenda! Impedit,
+                corrupti ipsum. Dicta, quasi, ducimus itaque voluptatem vel quis cumque sequi aspernatur eum ex at?
+                Mollitia.</p>
+            <div class="box-no-border">
+                <img src="assets/icons/like.png" alt="like">
+                <div>
+                    <h3>Lorem, ipsum dolor 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, unde?</p>
+                </div>
+            </div>
+            <div class="box-no-border">
+                <img src="assets/icons/like.png" alt="like">
+                <div>
+                    <h3>Lorem, ipsum dolor 02</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, unde?</p>
+                </div>
+            </div>
+            <div class="box-no-border">
+                <img src="assets/icons/like.png" alt="like">
+                <div>
+                    <h3>Lorem, ipsum dolor 03</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, unde?</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Kinds of furnitures -->
-    <section id="categories">
+    <!-- Testimonials of clients and video-->
+    <section id="testimonials">
+        <div class="testimonials-bg-color"></div>
+        <div id="furniture-video">
+            <iframe class="demo-video" width="560" height="315" src="https://www.youtube.com/embed/YkfPITD2C8Y?start=5"
+                title="YouTube video player" frameborder="0" allow="accelerometer; encrypted-media; gyroscope;"
+                allowfullscreen></iframe>
+        </div>
 
+        <div class="title">
+            <h2>Our testimonials</h2>
+        </div>
+
+        <div class="list-of-testimonials">
+            <div class="testimonial">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas quia in quis dolor ipsa
+                    molestias omnis reiciendis facilis praesentium. Obcaecati eveniet voluptatem aspernatur ipsam
+                    perspiciatis sunt nam nihil vel!</p>
+                <h3> Roman Walton</h3>
+                <i> - Client since 5 years</i>
+            </div>
+            <div class="testimonial">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas quia in quis dolor ipsa
+                    molestias omnis reiciendis facilis praesentium. Obcaecati eveniet voluptatem aspernatur ipsam
+                    perspiciatis sunt nam nihil vel!</p>
+                <h3>Sully Denton</h3>
+                <i> - Client since 7 years</i>
+            </div>
+            <div class="testimonial">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas quia in quis dolor ipsa
+                    molestias omnis reiciendis facilis praesentium. Obcaecati eveniet voluptatem aspernatur ipsam
+                    perspiciatis sunt nam nihil vel!</p>
+                <h3> John Doe </h3>
+                <i> - Client since 3 years</i>
+            </div>
+
+        </div>
     </section>
 
     <!-- footer -->
     <footer id="footer">
-
+        <div class="footer-title">
+            <img src="assets/icons/armchair-white.png" alt="icon">
+            <div>
+                <h3>Furniture</h3>
+                <h3>Store</h3>
+                <i>The best</i> <br>
+                <i>furnitures</i> <br>
+                <i>from home</i>
+            </div>
+        </div>
+        <div class="footer-options">
+            <h4>Options</h4>
+            <ul class="list-style-none">
+                <li><a class="no-decoration-text-white line-hover" href="#home">Home</a></li>
+                <li><a class="no-decoration-text-white line-hover" href="#recommended-products">Recommendations</a></li>
+                <li><a class="no-decoration-text-white line-hover" href="#why-choose-us">why choose us</a></li>
+                <li><a class="no-decoration-text-white line-hover" href="#testimonials">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-media">
+            <h4>Social Media</h4>
+            <ul class="list-style-none">
+                <li><a class="no-decoration-text-white line-hover" href="#footer">Facebook</a></li>
+                <li><a class="no-decoration-text-white line-hover" href="#furniture-video">YouTube</a></li>
+                <li><a class="no-decoration-text-white line-hover" href="#footer">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 

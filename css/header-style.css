@@ -1,20 +1,17 @@
+/* Clase manipulada por js */
 .bg-color{
     background-color: var(--color-primary) !important;
     transition: background-color 200ms;
 }
 
+/* Clase manipulada por js */
 .bg-white{
     background-color: var(--color-white) !important;
     transition: background-color 200ms;
 }
 
-.no-decoration-text{
-    text-decoration: none;
-    color: var(--color-black);
-}
 
 /* Header Section */
-
 #header {
     position: sticky;
     top: 0;

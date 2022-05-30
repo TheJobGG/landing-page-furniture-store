@@ -53,7 +53,7 @@ let imgModal = (src, alt, timeOpenModal, timeCloseModal) => {
     //Añadiendo la imagen al modal
     const newImage = document.createElement("img");
     newImage.setAttribute("src", src);
-
+    newImage.setAttribute("draggable", "false");
     // poniendo el texto alternativo como caption
     const caption = document.createElement("div");
     caption.innerText = alt;

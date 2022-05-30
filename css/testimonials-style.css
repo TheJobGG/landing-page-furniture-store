@@ -1,0 +1,73 @@
+/* Contenedor principal */
+#testimonials {
+    margin-top: var(--margin-heigth-elements);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    padding: 0 var(--horizontal-padding);
+}
+
+/* Color de fondo */
+.testimonials-bg-color {
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 90%;
+    margin-top: 150px;
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+}
+
+
+/* Ajuestes del video */
+#furniture-video {
+    background-color: #cacaca;
+}
+
+/* Estilado del contenedor de testimoniales */
+#testimonials>.list-of-testimonials {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* Estilado del contenedor del testimonio */
+.testimonial {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    color: var(--color-black);
+}
+
+/* Estilado del texto del testimonio */
+.testimonial>p {
+    margin-bottom: 20px;
+}
+
+/* Estilado del texto del testimonio */
+.testimonial>i {
+    padding-left: 10px;
+}
+
+#testimonials > .title{
+    position: relative;
+    text-align: center;
+}
+
+#testimonials > .title > h2{
+    color: var(--color-black)
+}
+
+#testimonials > .title > h2::before{
+    content: "testimonials";
+    position: absolute;
+    height: 5px;
+    left: 30%;
+    right: 30%; 
+    bottom: -15px;
+    overflow: hidden;
+    background-color: var(--color-black)
+}
