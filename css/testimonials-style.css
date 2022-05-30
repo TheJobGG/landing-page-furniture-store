@@ -42,6 +42,11 @@
     padding: 20px;
     border-radius: var(--border-radius);
     color: var(--color-black);
+    transition: scale 100ms ease-out, box-shadow 250ms ease-out;
+}
+.testimonial:hover {
+    scale: 1.05;
+    box-shadow: 6px 6px 10px var(--color-black-secondary);
 }
 
 /* Estilado del texto del testimonio */
@@ -74,9 +79,15 @@
     background-color: var(--color-black)
 }
 
+@media screen and (max-width: 950px) {
+    #testimonials>.list-of-testimonials {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #testimonials {
-        padding: 0 50px;
+        padding: 30px 50px;
     }
 
     #furniture-video>iframe {
