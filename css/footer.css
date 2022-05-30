@@ -15,6 +15,13 @@
     width: 50%;
 }
 
+#footer > div:last-child > div > h4{
+    border-bottom: 1px solid var(--color-white);
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
 #footer>a>.footer-title {
     display: flex;
     flex-direction: row;
