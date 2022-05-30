@@ -22,3 +22,27 @@
     width: 64px;
     margin: auto;
 }
+
+#footer>.footer-title > div > h3:nth-child(2){
+    border-bottom: 1px solid var(--color-white);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px;
+    }
+    
+    #footer>.footer-title>img {
+        margin: inherit;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 30px;
+    }
+    #footer>.footer-title{
+        gap: 0;
+    }
+
+}
