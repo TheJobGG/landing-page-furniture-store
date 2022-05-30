@@ -43,6 +43,18 @@
 
 .mask-image {
     -webkit-mask-image: -webkit-gradient(linear, center bottom, center center,
-            color-stop(0.00, rgba(0, 0, 0, 0)),
-            color-stop(1.00, rgba(0, 0, 0, 1)));
+    color-stop(0.00, rgba(0, 0, 0, 0)),
+    color-stop(1.00, rgba(0, 0, 0, 1)));
+}
+
+
+@media screen and (max-width: 600px) {
+    #why-choose-us {
+        margin-top: 50px;
+    }
+    
+    .mask-image {
+        display: none;
+    }
+
 }
