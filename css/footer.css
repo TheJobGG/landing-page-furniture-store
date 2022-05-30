@@ -1,6 +1,5 @@
 #footer {
     margin-top: 30px;
-    width: 100%;
     background-color: var(--color-black);
     color: var(--color-white);
     display: flex;
@@ -9,7 +8,14 @@
     padding: 20px;
 }
 
-#footer>.footer-title{
+#footer > div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#footer>a>.footer-title {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -17,13 +23,13 @@
     gap: 20px;
 }
 
-#footer>.footer-title>img {
+#footer>a>.footer-title>img {
     height: 64px;
     width: 64px;
     margin: auto;
 }
 
-#footer>.footer-title > div > h3:nth-child(2){
+#footer>a>.footer-title>div>h3:nth-child(2) {
     border-bottom: 1px solid var(--color-white);
     margin-bottom: 5px;
 }
@@ -33,16 +39,34 @@
         flex-direction: column;
         gap: 30px;
         padding: 40px;
+        margin: auto;
     }
-    
-    #footer>.footer-title>img {
+
+    #footer > div:last-child{
+        margin: auto;
+        column-gap: 50px;
+    }
+
+    #footer>a>.footer-title>img {
         margin: inherit;
         margin-top: auto;
         margin-bottom: auto;
         margin-right: 30px;
     }
-    #footer>.footer-title{
+
+    #footer>a>.footer-title {
         gap: 0;
     }
 
+}
+
+
+/* Under footer */
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--color-black-secondary);
+    color: var(--color-white);
+    text-align: center;
 }

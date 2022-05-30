@@ -37,8 +37,8 @@
 
         <ul>
             <li><a href="#recommended-products" class="no-decoration-text-black">Furnitures</a></li>
-            <li><a href="#why-choose-us" class="no-decoration-text-black">About Us</a></li>
-            <li><a href="#footer" class="no-decoration-text-black">Contact Us</a></li>
+            <li><a href="#about-us" class="no-decoration-text-black link">About Us</a></li>
+            <li><a href="#contact" class="no-decoration-text-black">Contact Us</a></li>
         </ul>
     </header>
 
@@ -84,6 +84,7 @@
     </section>
 
     <!-- List of benefits by choose us -->
+    <div id="about-us"></div>
     <section id="why-choose-us">
         <div class="mask-image">
             <img src="assets/man benefits.png" alt="Man">
@@ -107,7 +108,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, unde?</p>
                 </div>
             </div>
-            <div class="box-no-border">
+            <div class="box-no-border" id="video">
                 <img src="assets/icons/like.png" alt="like">
                 <div>
                     <h3>Lorem, ipsum dolor 03</h3>
@@ -158,38 +159,46 @@
 
     <!-- footer -->
     <footer id="footer" class="observe">
-        <div class="footer-title">
-            <img src="assets/icons/armchair-white.png" alt="icon">
-            <div>
-                <h3>Furniture</h3>
-                <h3>Store</h3>
-                <i>The best</i> <br>
-                <i>furnitures</i> <br>
-                <i>from home</i>
+        <a class="no-decoration-text-white" href="#home">
+            <div class="footer-title">
+                <img src="assets/icons/armchair-white.png" alt="icon">
+                <div>
+                    <h3>Furniture</h3>
+                    <h3>Store</h3>
+                    <i>The best</i> <br>
+                    <i>furnitures</i> <br>
+                    <i>from home</i>
+                </div>
+            </div>
+        </a>
+        <div>
+            <div class="footer-options">
+                <h4>Options</h4>
+                <ul class="list-style-none">
+                    <li><a class="no-decoration-text-white line-hover" href="#home">Home</a></li>
+                    <li><a class="no-decoration-text-white line-hover" href="#recommended-products">Recommendations</a></li>
+                    <li><a class="no-decoration-text-white line-hover" href="#why-choose-us">why choose us</a></li>
+                    <li><a class="no-decoration-text-white line-hover" href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-media">
+                <h4>Social Media</h4>
+                <ul class="list-style-none">
+                    <li><a class="no-decoration-text-white line-hover" href="#footer">Facebook</a></li>
+                    <li><a class="no-decoration-text-white line-hover link" href="#video">YouTube</a></li>
+                    <li><a class="no-decoration-text-white line-hover" href="#footer">Instagram</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-options">
-            <h4>Options</h4>
-            <ul class="list-style-none">
-                <li><a class="no-decoration-text-white line-hover" href="#home">Home</a></li>
-                <li><a class="no-decoration-text-white line-hover" href="#recommended-products">Recommendations</a></li>
-                <li><a class="no-decoration-text-white line-hover" href="#why-choose-us">why choose us</a></li>
-                <li><a class="no-decoration-text-white line-hover" href="#testimonials">Testimonials</a></li>
-            </ul>
-        </div>
-        <div class="footer-social-media">
-            <h4>Social Media</h4>
-            <ul class="list-style-none">
-                <li><a class="no-decoration-text-white line-hover" href="#footer">Facebook</a></li>
-                <li><a class="no-decoration-text-white line-hover" href="#furniture-video">YouTube</a></li>
-                <li><a class="no-decoration-text-white line-hover" href="#footer">Instagram</a></li>
-            </ul>
-        </div>
     </footer>
+    <div id="contact">
+        <div>Call us for more information. +55-55-555-555 | Furniture Store - <span class="year"></span></div>
+    </div>
 </body>
 
 <script src="js/header.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/anchorScroll.js"></script>
 
 </html>
