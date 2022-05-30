@@ -54,7 +54,8 @@ let imgModal = (src, alt, timeOpenModal, timeCloseModal) => {
     const newImage = document.createElement("img");
     newImage.setAttribute("src", src);
     
-    
+    // Si se esta en movil, se ajusta la imagen a tamaño completo de la pantalla,
+    // de lo contrario se dejara a su tamaño original.
     if(document.body.offsetWidth < 600) newImage.setAttribute("style", "width: 99vw;");
     // poniendo el texto alternativo como caption
     const caption = document.createElement("div");
