@@ -93,3 +93,8 @@
     top: 45%;
     right: 2%;
   }
+
+    #about-us{
+      position: absolute;
+      bottom: 0;
+    }
