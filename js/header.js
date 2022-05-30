@@ -15,10 +15,10 @@ const heightBanner = mainContentBgColor.clientHeight
 let verified = true;
 function isOnTop() {
     if (window.scrollY < heightBanner && verified) {
-        console.log('En pantalla - window Scroll')
+        /* console.log('En pantalla - window Scroll') */
         header.classList.add('bg-color');
         header.classList.remove('bg-white');
-        console.log("~~~~ Ya me ejecuté y cumplí mi deber, ya no me volverás a ver... :(")
+        /* console.log("Función ejecutada, no debería volver a ejecutarse.") */
     }
 
 }
@@ -32,7 +32,7 @@ const observerHeader = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                console.log('En pantalla - observer')
+                /* console.log('En pantalla - observer') */
                 header.classList.add('bg-color');
                 header.classList.remove('bg-white');
                 return;
@@ -40,12 +40,11 @@ const observerHeader = new IntersectionObserver(
                 // Este código solo se ejeutará una vez al cargar la página para verificar que 
                 // la navegación esté arriba o en top
                 isOnTop()
-                console.log('En pantalla por método, ya no debería volver a ejecutarse...')
+                /* console.log('En pantalla por método, ya no debería volver a ejecutarse...') */
                 verified = false;
-                console.log('return')
                 return;
             } else {
-                console.log('Fuera de pantalla')
+                /* console.log('Fuera de pantalla') */
                 header.classList.remove('bg-color');
                 header.classList.add('bg-white');
                 return;
