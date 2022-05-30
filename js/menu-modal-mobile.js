@@ -21,7 +21,7 @@ function clickHamburgerIcon() {
 
     const listFurnitures = document.createElement("li");
     const furnitures = document.createElement("a");
-    furnitures.setAttribute("href", "#recommended-products")
+    furnitures.setAttribute("href", "#products")
     furnitures.innerText = "Furntiures"
     listFurnitures.append(furnitures);
 

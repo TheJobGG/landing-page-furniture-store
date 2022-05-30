@@ -12,17 +12,28 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
     #recommended-products {
         flex-direction: column;
     }
-
+    
     #recommended-products > div:nth-child(1) {
         order: 2;
+        margin-bottom: 50px;
     }
     #recommended-products > div:nth-child(2) {
         text-align: center;
         order: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #recommended-products > div:nth-child(1) {
         margin-bottom: 50px;
     }
+    #recommended-products > div:nth-child(2) {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
 }

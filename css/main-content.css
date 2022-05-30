@@ -1,16 +1,16 @@
-#main-content{
+#main-content {
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 90vh;
 }
 
 
-#main-content > img{
+#main-content>img {
     height: 80vh;
 }
 
-#main-content > .main-content-bg-color{
+#main-content>.main-content-bg-color {
     background-color: var(--color-primary);
     position: absolute;
     top: 0;
@@ -19,23 +19,30 @@
     z-index: -1;
 }
 
-.main-content-info{
+.main-content-info {
     margin-left: 5rem;
     margin-top: 3rem;
 }
 
-.main-content-info > h1{
+.main-content-info>h1 {
     font-size: 3rem;
 }
 
-.main-content-info > p{
+.main-content-info>p {
     margin-top: 1rem;
 }
 
-.main-content-buttons{
+.main-content-buttons {
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+#products {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
 }
 
 @media screen and (max-width: 950px) {
@@ -44,21 +51,29 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    #main-content>img:nth-child(3) {
+        overflow: hidden;
+    }
+
+    #products {
+        bottom: 15vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    #main-content{
+    #main-content {
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
-    #main-content > .main-content-bg-color{
+    
+    #main-content>.main-content-bg-color {
         height: 85vh;
     }
-    
-    #main-content > img{
+
+    #main-content>img {
         /* position: absolute;
         z-index: -1;
         top: 20vh;
@@ -66,14 +81,14 @@
         height: 30vh; */
         display: none;
     }
-
-    .main-content-info{
+    
+    .main-content-info {
         margin-left: 1rem;
         margin-top: 1rem;
         text-align: center;
     }
 
-    .main-content-buttons{
+    .main-content-buttons {
         margin-top: 80px;
         display: flex;
         flex-direction: row;
