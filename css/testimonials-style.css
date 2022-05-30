@@ -24,7 +24,9 @@
 
 /* Ajuestes del video */
 #furniture-video {
-    background-color: #cacaca;
+    /* background-color: #fafafa;
+    width: 560px;
+    height: 315px; */
 }
 
 /* Estilado del contenedor de testimoniales */
@@ -52,37 +54,37 @@
     padding-left: 10px;
 }
 
-#testimonials > .title{
+#testimonials>.title {
     position: relative;
     text-align: center;
 }
 
-#testimonials > .title > h2{
+#testimonials>.title>h2 {
     color: var(--color-black)
 }
 
-#testimonials > .title > h2::before{
+#testimonials>.title>h2::before {
     content: "testimonials";
     position: absolute;
     height: 5px;
     left: 30%;
-    right: 30%; 
+    right: 30%;
     bottom: -15px;
     overflow: hidden;
     background-color: var(--color-black)
 }
 
 @media screen and (max-width: 600px) {
-    #testimonials{
+    #testimonials {
         padding: 0 50px;
     }
 
-    #furniture-video > iframe{
+    #furniture-video>iframe {
         width: 90vw;
         height: 200px;
     }
 
-    #testimonials>.list-of-testimonials{
+    #testimonials>.list-of-testimonials {
         flex-direction: column;
     }
 }
