@@ -38,6 +38,13 @@
     justify-content: space-evenly;
 }
 
+@media screen and (max-width: 950px) {
+    .main-content-buttons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 
 @media screen and (max-width: 600px) {
     #main-content{
@@ -48,7 +55,7 @@
     }
 
     #main-content > .main-content-bg-color{
-        height: 90vh;
+        height: 85vh;
     }
     
     #main-content > img{
@@ -63,12 +70,13 @@
     .main-content-info{
         margin-left: 1rem;
         margin-top: 1rem;
+        text-align: center;
     }
 
     .main-content-buttons{
         margin-top: 80px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         gap: 20px;
