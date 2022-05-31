@@ -21,14 +21,6 @@
     bottom: -30px;
 }
 
-
-/* Ajuestes del video */
-#furniture-video {
-    /* background-color: #fafafa;
-    width: 560px;
-    height: 315px; */
-}
-
 /* Estilado del contenedor de testimoniales */
 #testimonials>.list-of-testimonials {
     display: flex;
@@ -38,8 +30,9 @@
 
 /* Estilado del contenedor del testimonio */
 .testimonial {
+    position: relative;
     background-color: var(--color-white);
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     border-radius: var(--border-radius);
     color: var(--color-black);
     transition: scale 100ms ease-out, box-shadow 250ms ease-out;
@@ -47,6 +40,21 @@
 .testimonial:hover {
     scale: 1.05;
     box-shadow: 6px 6px 10px var(--color-black-secondary);
+}
+
+/* Estilado de img de avatar */
+.testimonial > img{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    margin-left: -40px;
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    box-shadow: 0px 1px 6px var(--color-black-secondary);
+
 }
 
 /* Estilado del texto del testimonio */
