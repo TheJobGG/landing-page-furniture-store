@@ -27,3 +27,25 @@
 #metrics > .metric > .metric-text > span:last-child{
     font-size: 0.9rem;
 }
+
+@media screen and (max-width: 950px) {
+    #metrics{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    #metrics > .metric{
+        margin: 0 15%;
+        
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #metrics{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+    
+    
+}
