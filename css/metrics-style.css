@@ -8,44 +8,56 @@
     margin-bottom: 50px;
 }
 
-#metrics > .metric{
+#metrics > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#metrics .metric{
     display: flex;
     align-items: center;
 }
 
-#metrics > .metric > img{
+#metrics .metric > img{
     background-color: var(--color-primary-shadow33);
     border-radius: 50%;
     padding: 10px;
     margin-right: 15px;
 }
 
-#metrics > .metric > .metric-text > span:first-child{
+#metrics .metric > .metric-text > span:first-child{
     font-size: 1.4rem;
     font-weight: bolder;
 }
-#metrics > .metric > .metric-text > span:last-child{
+#metrics .metric > .metric-text > span:last-child{
     font-size: 0.9rem;
 }
 
 @media screen and (max-width: 950px) {
     #metrics{
-        flex-wrap: wrap;
         row-gap: 30px;
     }
-    #metrics > .metric{
-        margin: 0 15%;
-        
+
+    #metrics > div {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    
+    .circle-metrics{
+        display: none;
     }
 }
 
 
 @media screen and (max-width: 600px) {
     #metrics{
-        flex-wrap: nowrap;
+        position: relative;
         flex-direction: column;
         padding-left: 5%;
+        align-items: flex-start;
     }
     
-    
+    .circle-metrics{
+        right: -40% !important;
+    }
 }
