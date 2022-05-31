@@ -32,12 +32,13 @@
 
 /* Diseño de la imagen en la caja */
 .box-no-border>img {
-    /* background-color: var(--color-primary-shadow90); */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--color-primary-shadow33);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
     width: 60px;
     height: 60px;
+    object-fit: cover;
 }
 
 
