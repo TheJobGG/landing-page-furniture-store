@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 30px;
+    
     padding: 0 10%;
      overflow: hidden;
 }
@@ -21,7 +21,7 @@
 #our-services>.services {
     display: flex;
     flex-direction: row;
-    column-gap: 30px;
+    
 }
 
 #our-services>.services>div {
@@ -100,9 +100,18 @@
 
 
 @media screen and (max-width: 600px) {
+    #our-services>.services>div {
+        row-gap: 0;
+    }
+    
     #our-services, #our-services > .services{
         flex-direction: column;
     }
+
+    #our-services>.services>div>div:last-child {
+        border-bottom: none;
+    }
+
     .circle-left{
         left: -50%;
         top: 10%;
