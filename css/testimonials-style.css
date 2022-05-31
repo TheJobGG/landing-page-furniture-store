@@ -57,6 +57,11 @@
 
 }
 
+.testimonial > h3{
+    border-top: 1px solid var(--color-primary-shadow33);
+    padding-top: 10px;
+}
+
 /* Estilado del texto del testimonio */
 .testimonial>p {
     margin-bottom: 20px;
