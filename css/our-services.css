@@ -5,7 +5,7 @@
     align-items: center;
     row-gap: 30px;
     padding: 0 10%;
-    overflow: hidden;
+     overflow: hidden;
 }
 
 #our-services>h2,
@@ -94,7 +94,7 @@
     
     .circle-right{
         right: 2%;
-        bottom: -10px;    
+        bottom: 5px;    
     }
 }
 
