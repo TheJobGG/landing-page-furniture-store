@@ -67,3 +67,48 @@
     bottom: 0;
 
 }
+
+
+@media screen and (max-width: 950px) {
+    #our-services{
+        margin-bottom: 70px;
+    }
+
+    #our-services>h2,
+    #our-services>p {
+        width: 100%;
+    }
+    
+    #our-services>.services>div {
+        padding: 0 10px;
+    }
+
+    #our-services>.services>div>div {
+        margin-bottom: 20px;
+    }
+
+    .circle-left{
+        left: -7%;
+    }
+    
+    .circle-right{
+        right: 2%;
+        bottom: -10px;    
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #our-services, #our-services > .services{
+        flex-direction: column;
+    }
+    .circle-left{
+        left: -50%;
+        top: 10%;
+    }
+    
+    .circle-right{
+        right: -20%;
+        bottom: 10%;    
+    }
+}
