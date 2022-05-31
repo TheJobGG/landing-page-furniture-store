@@ -95,6 +95,7 @@
 @media screen and (max-width: 950px) {
     #testimonials>.list-of-testimonials {
         flex-direction: column;
+        row-gap: 80px;
     }
 }
 
