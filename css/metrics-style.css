@@ -63,7 +63,7 @@
     .circle-metrics {
         position: absolute;
         right: -15px;
-        top: -30px;
+        bottom: 30px;
         background-color: var(--color-primary-shadow33);
         width: 100px;
         height: 100px;
